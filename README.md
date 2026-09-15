@@ -39,8 +39,8 @@ len: chain length category (middle, long, very long)
 \end{equation}
 ```
 
-
 partial pooling
+
 ``m̀ath
 \begin{equation}
 \begin{aligned}
@@ -52,6 +52,7 @@ partial pooling
 ```
 
 priors
+
 ```math
 \begin{equation}
 \begin{aligned}
