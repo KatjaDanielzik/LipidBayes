@@ -41,7 +41,7 @@ len: chain length category (middle, long, very long)
 
 
 partial pooling
-```{=latex}
+``m̀ath
 \begin{equation}
 \begin{aligned}
 \beta^{\mathrm{satClass}}_{c,sat} &\sim{\sf normal}(\mu^{sat},\sigma^{sat}) \\
@@ -52,7 +52,7 @@ partial pooling
 ```
 
 priors
-```{=latex}
+```math
 \begin{equation}
 \begin{aligned}
 \alpha^{\mathrm{subject}}_{s} &\sim {\sf normal}(0,1) \\
