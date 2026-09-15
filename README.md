@@ -26,8 +26,19 @@ s: subject
 sat: chain saturation category (MUFA, PUFA, saturated)   
 len: chain length category (middle, long, very long)
 
+```math
+\begin{equation}
+\begin{aligned}
+\mathrm{y}_{i} &\sim {\sf normal}(\mu_i,\sigma_{\ell,cond}) \\
+\mu_i &= \alpha^{\mathrm{subject}}_{s(i)} + \alpha^{\mathrm{lipid}}_{\ell(i)}
+      + \mathrm{cond}_i \,\delta^{\mathrm{lipid}}_{\ell(i)} \\
+\delta^{\mathrm{lipid}}_{\ell} &= \delta^{\mathrm{cond}} + \beta^{\mathrm{class}}_{c(l)} +
+\beta^{\mathrm{satClass}}_{c(l),sat(l)} + \beta^{\mathrm{lenClass}}_{c(l),len(l)} +
+\upsilon_{\ell} \\
+\end{aligned}
+\end{equation}
+```
 
-![equation](https://latex.codecogs.com/svg.image?&space;\begin{equation}\begin{aligned}\mathrm{y}_{i}&\sim{\sf&space;normal}(\mu_i,\sigma_{\ell,cond})\\&space;\mu_i&space;&=\alpha^{\mathrm{subject}}_{s(i)}&plus;\alpha^{\mathrm{lipid}}_{\ell(i)}&plus;\mathrm{cond}_i&space;\,\delta^{\mathrm{lipid}}_{\ell(i)}\\&space;\delta^{\mathrm{lipid}}_{\ell}&=\delta^{\mathrm{cond}}&plus;\beta^{\mathrm{class}}_{c(l)}&plus;\beta^{\mathrm{satClass}}_{c(l),sat(l)}&plus;\beta^{\mathrm{lenClass}}_{c(l),len(l)}&plus;\upsilon_{\ell}\\&space;\end{aligned}\end{equation})
 
 partial pooling
 ```{=latex}
