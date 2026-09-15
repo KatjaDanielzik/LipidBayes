@@ -22,7 +22,7 @@ i: observation (i.e. one lipid abundance in one subject in one biological condit
 c: lipid sub-class   
 cond: experimental condition (i.e. normal or tumor)   
 l: lipid   
-s: subject   
+s: subject (optional)
 sat: chain saturation category (MUFA, PUFA, saturated)   
 len: chain length category (middle, long, very long)
 
@@ -39,9 +39,9 @@ len: chain length category (middle, long, very long)
 \end{equation}
 ```
 
-partial pooling
+## partial pooling
 
-``m̀ath
+```math
 \begin{equation}
 \begin{aligned}
 \beta^{\mathrm{satClass}}_{c,sat} &\sim{\sf normal}(\mu^{sat},\sigma^{sat}) \\
@@ -51,7 +51,7 @@ partial pooling
 \end{equation}
 ```
 
-priors
+## priors
 
 ```math
 \begin{equation}
